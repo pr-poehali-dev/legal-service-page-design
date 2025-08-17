@@ -234,8 +234,119 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Process Section */}
+      {/* Pricing Table Section */}
       <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center space-y-4 mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-bold">Стоимость услуг</h2>
+            <p className="text-xl text-muted-foreground">
+              Прозрачное ценообразование без скрытых платежей
+            </p>
+          </div>
+
+          <div className="grid gap-6">
+            <Card className="overflow-hidden">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-blue-100 border-b">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-3">
+                    <Icon name="MessageCircle" size={24} className="text-blue-600" />
+                    <CardTitle className="font-display text-xl">Консультация</CardTitle>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-2xl font-display font-bold text-primary">1299 ₽</div>
+                    <div className="text-sm text-muted-foreground">64 балла</div>
+                  </div>
+                </div>
+                <CardDescription className="text-base">
+                  Консультация без анализа документов по делам ГИБДД
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <CardHeader className="bg-gradient-to-r from-green-50 to-green-100 border-b">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-3">
+                    <Icon name="FileEdit" size={24} className="text-green-600" />
+                    <CardTitle className="font-display text-xl">Составление документа</CardTitle>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-2xl font-display font-bold text-primary">от 3000 ₽</div>
+                    <div className="text-sm text-muted-foreground">от 150 баллов</div>
+                  </div>
+                </div>
+                <CardDescription className="text-base">
+                  Составление документа по делам ГИБДД
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <CardHeader className="bg-gradient-to-r from-purple-50 to-purple-100 border-b">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Scale" size={24} className="text-purple-600" />
+                    <CardTitle className="font-display text-xl">Представительство</CardTitle>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-2xl font-display font-bold text-primary">от 5000 ₽</div>
+                    <div className="text-sm text-muted-foreground">от 250 баллов</div>
+                  </div>
+                </div>
+                <CardDescription className="text-base">
+                  Представительство в суде по делам ГИБДД
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <CardHeader className="bg-gradient-to-r from-orange-50 to-orange-100 border-b">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Search" size={24} className="text-orange-600" />
+                    <CardTitle className="font-display text-xl">Анализ документов</CardTitle>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-2xl font-display font-bold text-primary">от 2500 ₽</div>
+                    <div className="text-sm text-muted-foreground">от 125 баллов</div>
+                  </div>
+                </div>
+                <CardDescription className="text-base">
+                  Анализ документов по делам ГИБДД
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <CardHeader className="bg-gradient-to-r from-teal-50 to-teal-100 border-b">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-3">
+                    <Icon name="FileTemplate" size={24} className="text-teal-600" />
+                    <CardTitle className="font-display text-xl">Шаблон документа</CardTitle>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-2xl font-display font-bold text-primary">от 500 ₽</div>
+                    <div className="text-sm text-muted-foreground">от 25 баллов</div>
+                  </div>
+                </div>
+                <CardDescription className="text-base">
+                  Шаблон документа по делам ГИБДД
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+
+          <div className="mt-8 text-center">
+            <Button size="lg" className="font-medium">
+              <Icon name="Calculator" size={18} className="mr-2" />
+              Рассчитать стоимость
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-16 px-4 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl md:text-4xl font-display font-bold">Как мы работаем</h2>
@@ -278,7 +389,7 @@ export default function Index() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl md:text-4xl font-display font-bold">Получить консультацию</h2>
